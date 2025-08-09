@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVL tree visualizer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="app">
+        <div class="panel control">
+            <h1>AVL Tree Visualizer</h1>
+            <div class="row">
+                <input id="valueInput" type="number" placeholder="Enter value to insert:">
+                <button id="insertBtn">Insert</button>
+            </div>
+            <div class="row">
+                <input id="delbtn" type="number" placeholder="Enter value to delete: ">
+                <button id="deleteBtn" class="secondary">Delete</button>
+            </div>
+            <div class="row">
+                <label class="muted">Animation ms</label>
+                <input id="animRange" type="range" min="80" max="1500" value="600">
+                <span id="animVal">600</span>
+            </div>
+            <div class="row">
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn" class="secondary">Pause</button>
+                <button id="stepBackBtn" class="secondary">
+                    Step Back
+                </button>
+                <button id="stepUpBtn" class="secondary">
+                    Step Up
+                </button>
+            </div>
+            <div class="row">
+                <button id="undoBtn" class="secondary">Undo</button>
+                <button id="redoBtn" class="secondary">Redo</button>
+                <button id="clearBtn" class="secondary">Clear</button>
+            </div>
+            <div class="row">
+                <button id="randomBtn" class="secondary">Random(7)</button>
+
+            </div>
+            <div class="muted small">History/ snapshots below - click to jump
+                <div id="history" class="history"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
