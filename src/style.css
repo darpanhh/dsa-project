@@ -1,0 +1,16 @@
+:root{
+    --bg:#071021;
+    --panel:#041426;
+    --accent:#ef4444;
+
+}
+*{
+    box-sizing:border-box;
+}
+html, body{
+    height:100%;
+    margin:0;
+    font-family:Inter, system-ui,Arial;
+    background: linear-gradient(180deg,#04101a,#071427);
+    color:#e6eef8
+}
